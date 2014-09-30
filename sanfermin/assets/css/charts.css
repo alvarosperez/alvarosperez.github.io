@@ -1,0 +1,152 @@
+a {
+    color: #B83834;
+    text-decoration: none;
+    font-size:14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.active { color: #2B2D31;}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.5em;
+    font-size:14px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align:justify;
+}
+
+div.chart {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #2B2D31;
+}
+
+div.chart ul {
+    list-style-type: none;
+    margin: 0px 0;
+    padding: 0;
+}
+
+div.chart li {
+    margin: 10px 0;
+    padding: 0;
+}
+
+div#map {
+    height: 550px;
+    width: auto;
+    margin: 0 0 1px 0;
+    position: relative;
+}
+
+.axis path,.axis line {
+    fill: none;
+    stroke: #7B7B7B;
+    shape-rendering: crispEdges;
+}
+
+.oecd line {
+    fill: none;
+    stroke: #7B7B7B;
+    stroke-dasharray: 7,2;
+    shape-rendering: crispEdges;
+}
+
+.compLine {
+    fill: none;
+    stroke: #D1D1D1;
+    stroke-dasharray: 7,2;
+    shape-rendering: crispEdges;
+}
+
+.label {
+    font-size: 14px;
+}
+
+.default {
+    color: rgb(229, 171, 169);
+}
+
+/*sex ratios*/
+div#sexRatio {
+    width: auto;
+    margin: 35px auto;
+    position: relative;
+}
+
+div.sexControls, div.boardControls {
+    position: absolute;
+    top: 30px;
+    background: white;
+    background: rgba(255,255,255,.9);
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    color: #2B2D31;
+}
+
+div.sexControls { float:left; width: 300px; padding: 10px 16px 10px 25px; }
+
+div.sexCountries, div.sexLegend {
+    float: left;
+    width: 100%;
+}
+
+path.girlPath {
+    stroke: none;
+    fill: orange;
+}
+
+path.boyPath {
+    stroke: none;
+    fill: #B83834;
+}
+
+path.icon2 {
+    stroke: none;
+    fill: orange;
+}
+
+path.icon1 {
+    stroke: none;
+    fill: #B83834;
+}
+
+path.missingPath {
+    stroke: #E98125;
+    fill-opacity: 0;
+    stroke-width: 1;
+}
+
+div.sexLegend {
+    font-size: 1.2em;
+}
+
+div.sexLegend h3 {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul.countries, ul.boardChoices {
+    font-size: 1.2em;
+    list-style-type: none;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.legendSVG {
+    width: 15px;
+    height: 15px;
+}
+
+ul.countries li {
+    float: left;
+    display: inline;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}

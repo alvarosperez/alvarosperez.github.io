@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Template: Jorge Lavin. Content and Visualization: Álvaro Sánchez / Rafael Pellón">
+	
+	<title>San Fermin: BullRuns Insights</title>
+
+	<!-- Bootstrap itself -->
+	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/sanfer.css">
+
+	<!-- Fonts -->
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+</head>
+
+<!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
+<body class="theme-invert">
+
+<!-- navigation menu -->
+<nav class="mainmenu" id="wrapper">
+	<div class="container">
+		<div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li><a href="#head"><i class="glyphicon glyphicon-home"></i><br>Home</a>
+                </li>
+                <li><a href="#encierro"><img src="assets/images/bull_icon.png" class="glyphicon" /><br>Encierro</a>
+                </li>
+                <li><a href="#numbers"><i class="glyphicon glyphicon-stats"></i><br>Numbers</a>
+                </li>
+                <li><a href="#costs"><i class="glyphicon glyphicon-minus-sign"></i><br>Costs</a>
+                </li>
+                <li><a href="#team"><i class="glyphicon glyphicon-envelope"></i><br>Authors</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+</nav>
+
+<!-- Main (Home) section -->
+<section class="section" id="head">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">	
+
+				<!-- Site Title, your name, HELLO msg, etc. -->
+				<h1 class="title">San Fermín</h1>
+				<h2 class="subtitle">Welcome to San Fermines</h2>
+
+				<!-- Short introductory (optional) -->
+				<h3 class="tagline" style="text-align:center;">
+					The festival of San Fermín (or Sanfermines, Basque: Sanferminak) in the city of Pamplona (Navarre, Spain), is a deeply rooted celebration held annually from 12:00, 6 July, when the opening of the party is marked by setting off the pyrotechnic <i>chupinazo</i>, to midnight 14 July, with the singing of the <i>Pobre de Mí</i>. While its most famous event is the <i>encierro</i>, or the running of the bulls, which happens at 8:00 am from 7 July to 14 July, the week long celebration involves many other traditional and folkloric events.
+				</h3>
+				
+				<!-- Nice place to describe your site in a sentence or two -->
+				<p style="text-align:center;"><a href="#encierro" id="show-more" class="btn btn-default btn-lg">Show me more</a></p>
+	
+			</div> <!-- /col -->
+		</div> <!-- /row -->
+	
+	</div>
+</section>
+
+<!-- Second (About) section -->
+<section class="section" id="encierro">
+	<div class="container">
+	
+		<h2 class="text-center title">The Encierros</h2>
+		<div class="row">
+			<div class="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">    
+				<h5><strong>Procedure<br></strong></h5>
+				<p>From July 7 to 14, at 8.00 am, a rocket is set off to alert the runners that the corral gate is open. Before that, a prayer has been given at a statue of Saint Fermín, patron of the festival, to ask the saint's protection.</p>
+				<p>A second rocket signals that all six bulls have been released. The third and fourth rockets are signals that all of the herd has entered the bullring and its corral respectively, marking the end of the event.</p>
+				<br>
+				<p class="text-center"><img src="assets/images/encierroStart.jpg" width="75%"></p>
+				<br>
+			</div>
+			<div class="col-md-5 col-lg-5">
+				<h5><strong>The bulls<br></strong></h5> 
+				<p>The herd is composed of the six bulls to be fought in the afternoon, six steers (castrated bulls) that run with the bulls, and three more steers that leave the corral two minutes later.</p>   
+				<br>
+				<p class="text-center"><img src="assets/images/img4.jpg" width="75%"></p>
+				<br>
+				<p>The average speed of the bulls is 25 km/h and they weight around 550 Kg on average. This means it is not possible to keep up with them for very long.</p> 
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-2">
+				<h5><strong>The route<br></strong></h5>
+				<p>The length of the run is 826 meters. It goes through four streets of the old part of the city (Santo Domingo, Town Hall Square, Mercaderes and Estafeta) and a section called Telefónica before entering into the bullring. The circuit has only changed slightly since 1852 as the former bullring was located close to the present one. Before that date the bullrunning ended in the "castle plaza", still not far from the present bullring.</p>
+				<br>
+			</div>	
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1">
+				<div id="map_canvas"></div>	
+			</div>			
+		</div>
+	</div>
+</section>
+
+<!-- Third (Works) section -->
+<section class="section" id="numbers">
+	<div class="container">
+	
+		<h2 class="text-center title">Statistics</h2>
+		<p class="lead text-center">
+			The encierros in numbers<br>
+		</p>
+
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-2 text-center">
+				<p>A 2011 survey among sanfermin runners yields very interesting results. Click on the selectors to start the visualization. 6% of the total 20,400 runners of that year's encierros took part in the survey.</p>
+				<iframe width="100%" height="700px" frameborder="0" src="/assets/stats.html"></iframe> 
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- Third (Works) section -->
+<section class="section" id="costs">
+	<div class="container">
+	
+		<h2 class="text-center title">The Cost</h2>
+		<p class="lead text-center">
+			The cost of San Fermín<br>
+		</p>
+
+		<div class="row">
+			<div class="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
+				<h5><strong>Not an economical problem<br></strong></h5> 
+				<p>Although economically positive to Pamplona, due to the spike in turism the city suffers every year during those days, the dangerous nature of the event and the high rate of inexperienced runners, together with the not-that-unusual drunken state of some of the runners, make us ponderate the 'tolls' the city has to pay during San Fermín.</p>
+			</div>
+			<div class="col-md-5 col-lg-5">
+				<h5><strong>Dangers in the running of the bulls<br></strong></h5> 
+				<p>The historical evolution of the bull-running seems to have made it an ever-more dangerous activity. The number of risky situations (such as the pile-ups) the number of injured and dead, seems to increase as time goes by. Until the double row of fencing was set up, it was even dangerous for the spectators, as it was not unusual for a bull to break through the one line of fencing.</p>    
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-2">
+			<h5><strong>The statistics are shocking<br></strong></h5> 
+			<p>Every year, between 200 and 300 people are injured during the run although most injuries are contusions due to falls and are not serious. Goring is much less common but potentially life threatening. Around 35 people has to be treated every year for this account. Another major risk is runners falling and piling up at the entrance of the bullring, which acts as a funnel as it is much narrower than the previous street. In such cases injuries come both from asphyxia and contusions to those in the pile and from goring if the bulls crush into the pile. This kind of blocking of the entrance has occurred at least ten times in the history of the run, the last occurring in 2013.</p>
+			<p>The following graph shows the amount of injured people every year. Since 1980, more than <strong>7700</strong> people has recieved medical attention. The quantity has remained more or less stable over the years (note there is no data for first aid treatment for several years), and the security measures implemented by the organization seem to have had no impact reducing the number of injured.</p>
+			<br>
+				<iframe width="100%" height="520px" frameborder="0" src="/assets/multiBarHorizontalChart.html"></iframe> 
+			</div>
+
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-2">
+				<br>
+				<h5><strong>Better be prepared for the inevitable<br></strong></h5>
+				<p>Overall, since record-keeping began in 1910, 15 people have been killed in the bull running of Pamplona, most of them due to being gored. To minimize the impact of injuries every day 200 people collaborate in the medical attention. They are deployed in 16 sanitary posts (every 50 metres on average), each one with at least a physician and a nurse among their personnel. In addition to the medical posts, there are around 20 ambulances.</p>
+				<p>The following graph shows the aggregated number of injures by day of the event. Interestingly, during the first day appears to be a high amount of gored people, with a steep decline fro the following day, no doubt induced by the eagerness of the people to participate in a new year's encierro and the precaution induced by the high amount of blood shed during the first day in the runners in the second day.</p>
+				<br>
+				<iframe width="100%" height="520px" frameborder="0" src="/assets/multiBarVerticalChart.html"></iframe> 
+			</div>
+
+			<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-offset-2">
+				<br>
+				<h5><strong>With about 5l. of blood in our veins, the blood losses are almost frightening<br></strong></h5>
+				<p>Deepening into the blood shed subject, we have calculated the total quantity of spilled blood every year's San Fermín. The following graph holds the results of such calculations. On average, the blood losses amount to 3.5 litres per year, with a lowest value of 1.36 l. in 1982 and the bloodest year being 1994, with 5.92 l.</p>
+				<br>
+				<iframe width="100%" height="520px" frameborder="0" src="/assets/discreteBarChart.html"></iframe> 
+			</div>
+
+		</div>
+		<div class="row">
+			<br>
+			<div class="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
+				<h5><strong>A total waste<br></strong></h5> 
+				<p>Since 1980, the total human blood shed in the sanfermines amounts to more than 120 l. That means we would need to 'squeeze' more than 24 human adults to get the same amount of blood than the litres we've spilled over Pamplona in San Fermín. Sadly, if we have donated all this blood, it would have amounted to more than 267 blood donations. Moreover, to this 'loss' we have to add the litres spent in treating the injured from gorings and cuts, which based on the high number of people injured every year, it can't be a small volume.</p>
+			</div>
+			<div class="col-md-5 col-lg-5">
+				<h5><strong>267 blood bags<br></strong></h5> 
+				<p class="text-center"><img width="95%" src="assets/images/bloodbags.png" /></p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- Fourth (Contact) section -->
+<section class="section" id="team">
+	<div class="container">
+	
+		<h2 class="text-center title">The Team</h2>
+
+		<p class="lead text-center">Meet the team</p>
+
+
+		<div class="row">
+			<br>
+			<div class="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1 text-center">
+				<img width="50%" src="assets/images/asanchez.jpg" /> 
+				<h5><strong>Álvaro Sánchez<br></strong></h5> 
+				<p class="text-center">Data Engineer</p>
+			</div>
+			<div class="col-md-5 col-lg-5 text-center">
+				<img width="50%" src="assets/images/rpellon.png" /> 
+				<h5><strong>Rafael Pellón<br></strong></h5> 	
+				<p class="text-center">Data Visualization Expert</p>   
+			</div>
+		</div>
+
+		<div class="row">
+			<br>
+			<p class="lead text-center">Feel free to download the code for the visualizations</p>
+			<p class="text-center"><a href="https://github.com/pellonrafael/hacksanfermin" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></p>
+			<p class="text-center">All data from <a href="http://sanfermin.com" class="btn btn-link">sanfermin.com</a> and <a href="http://issuu.com/kukuxumusu/docs/runningofthebullssurvey2011/2" class="btn btn-link">issuu</a></p>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- Load js libs only when the page is loaded. -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.custom.72241.js"></script>
+<!-- Custom template scripts and map -->
+<script src="assets/js/sanfer.js"></script>
+
+</body>
+</html>

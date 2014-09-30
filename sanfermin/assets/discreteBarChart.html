@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link href="css/nv.d3.css" rel="stylesheet" type="text/css">
+
+<style>
+
+body {
+  overflow-y:scroll;
+  background-color: #FCE6E6;
+}
+
+text {
+  font: 12px sans-serif;
+}
+
+svg {
+  display: block;
+}
+
+#chart1 svg{
+  height: 500px;
+  min-width: 100px;
+  min-height: 100px;
+/*
+  margin: 10px;
+  Minimum height and width is a good idea to prevent negative SVG dimensions...
+  For example width should be =< margin.left + margin.right + 1,
+  of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
+*/
+}
+
+</style>
+<body>
+
+  <div id="chart1">
+    <svg></svg>
+  </div>
+
+<script src="js/d3.v2.js"></script>
+<script src="js/nv.d3.js"></script>
+<!-- includinll the components so I don't have to minify every time I test in development -->
+<script src="js/tooltip.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/axis.js"></script>
+<script src="js/legend.js"></script>
+<script src="js/discreteBar.js"></script>
+<script src="js/discreteBarChart.js"></script>
+<script src="js/stream_layers.js"></script>
+<script>
+
+
+d3.json("./encierros_blood_discrete.json",function(data) {
+  nv.addGraph(function() {  
+    var chart = nv.models.discreteBarChart()
+        .x(function(d) { return d.label })
+        .y(function(d) { return d.value })
+        .staggerLabels(true)
+        //.staggerLabels(historicalBarChart[0].values.length > 8)
+        .tooltips(true)
+        .showValues(true)
+  
+    d3.select('#chart1 svg')
+        .datum(data)
+      .transition().duration(500)
+        .call(chart);
+  
+    nv.utils.windowResize(chart.update);
+  
+    return chart;
+  });
+});
+
+
+</script>
