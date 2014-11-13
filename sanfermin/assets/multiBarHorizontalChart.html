@@ -2,34 +2,29 @@
 <meta charset="utf-8">
 
 <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
-
 <style>
-
-body {
-  overflow-y:scroll;
-  background-color: #FCE6E6;
-}
-
-text {
-  font: 12px sans-serif;
-}
-
-#chart1 {
-  margin: 10px;
-  min-width: 100px;
-  min-height: 100px;
-/*
-  Minimum height and width is a good idea to prevent negative SVG dimensions...
-  For example width should be =< margin.left + margin.right + 1,
-  of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
-*/
-}
-
-#chart1 svg {
-  height: 500px;
-}
-
+  body {
+    overflow-y:scroll;
+    background-color: #FCE6E6;
+  }
+  
+  text {
+    font: 12px sans-serif;
+  }
+  
+  #chart1 {
+    margin: 10px;
+    min-width: 500px;
+    min-height: 400px;
+    height: 500px;
+  /*
+    Minimum height and width is a good idea to prevent negative SVG dimensions...
+    For example width should be =< margin.left + margin.right + 1,
+    of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
+  */
+  }
 </style>
+
 <body>
 
   <div id="chart1">
@@ -45,36 +40,34 @@ text {
 <script src="js/multiBarHorizontal.js"></script>
 <script src="js/multiBarHorizontalChart.js"></script>
 <script src="js/stream_layers.js"></script>
+
 <script>
 
-
-d3.json("./encierros_year_hor.json",function(data) {
-  var chart;
-  nv.addGraph(function() {
-    chart = nv.models.multiBarHorizontalChart()
-        .x(function(d) { return d.label })
-        .y(function(d) { return d.value })
-        .margin({top: 30, right: 20, bottom: 25, left: 40})
-        //.showValues(true)
-        //.tooltips(false)
-        .barColor(d3.scale.category20().range())
-        .showControls(true);
-  
-    chart.yAxis
-        .tickFormat(d3.format(',.2f'));
-  
-    d3.select('#chart1 svg')
-        .datum(data)
-      .transition().duration(500)
-        .call(chart);
-  
-    nv.utils.windowResize(chart.update);
-  
-    chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
-  
-    return chart;
+  d3.json("data/encierros_year_hor.json",function(data) {
+    var chart;
+    nv.addGraph(function() {
+      chart = nv.models.multiBarHorizontalChart()
+          .x(function(d) { return d.label })
+          .y(function(d) { return d.value })
+          .margin({top: 30, right: 20, bottom: 25, left: 40})
+          //.showValues(true)
+          //.tooltips(false)
+          .barColor(d3.scale.category20().range())
+          .showControls(true);
+    
+      chart.yAxis
+          .tickFormat(d3.format(',.2f'));
+    
+      d3.select('#chart1 svg')
+          .datum(data)
+        .transition().duration(500).call(chart);
+    
+      nv.utils.windowResize(chart.update);
+    
+      //chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+    
+      return chart;
+    });
   });
-});
-
 
 </script>

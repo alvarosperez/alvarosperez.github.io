@@ -50,7 +50,7 @@ sexControls.append('div')
 var force = d3.layout.force()
     .size([forceW, h]).charge(-30);
 
-d3.csv('./data.csv', function (csv) {
+d3.csv('data/stats_data.csv', function (csv) {
     data = csv;
 
     // add list of countries based on data

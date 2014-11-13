@@ -2,31 +2,29 @@
 <meta charset="utf-8">
 
 <link href="css/nv.d3.css" rel="stylesheet" type="text/css">
-
 <style>
-
-body {
-  overflow-y:scroll;
-  background-color: #FCE6E6;
-}
-
-text {
-  font: 12px sans-serif;
-}
-
-#chart1 {
-  height: 500px;
-  margin: 10px;
-  min-width: 500px;
-  min-height: 400px;
-/*
-Minimum height and width is a good idea to prevent negative SVG dimensions...
-For example width should be =< margin.left + margin.right + 1,
-of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
-*/
-}
-
+  body {
+    overflow-y:scroll;
+    background-color: #FCE6E6;
+  }
+  
+  text {
+    font: 12px sans-serif;
+  }
+  
+  #chart1 {
+    margin: 10px;
+    min-width: 500px;
+    min-height: 400px;
+    height: 500px;
+  /*
+    Minimum height and width is a good idea to prevent negative SVG dimensions...
+    For example width should be =< margin.left + margin.right + 1,
+    of course 1 pixel for the entire chart would not be very useful, BUT should not have errors
+  */
+  }
 </style>
+
 <body>
 
   <div id="chart1">
@@ -45,35 +43,33 @@ of course 1 pixel for the entire chart would not be very useful, BUT should not 
 
 <script>
 
-
-d3.json("./encierros_day_ver.json",function(data) {
-    var chart
-    nv.addGraph(function() {
-        chart = nv.models.multiBarChart()
-          .barColor(d3.scale.category20().range());
-    
-        chart.multibar
-          .hideable(true);
-    
-        chart.xAxis
-            .showMaxMin(true)
-            .tickFormat(d3.format(',f'));
-    
-        chart.yAxis
-            .tickFormat(d3.format(',.1f'));
-    
-        d3.select('#chart1 svg')
-            .datum(data)
-          .transition().duration(500).call(chart);
-    
-        nv.utils.windowResize(chart.update);
-    
-        chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
-    
-        return chart;
-    });
-});
-
+  d3.json("data/encierros_day_ver.json",function(data) {
+      var chart
+      nv.addGraph(function() {
+          chart = nv.models.multiBarChart()
+            .barColor(d3.scale.category20().range());
+      
+          chart.multibar
+            .hideable(true);
+      
+          chart.xAxis
+              .showMaxMin(true)
+              .tickFormat(d3.format(',f'));
+      
+          chart.yAxis
+              .tickFormat(d3.format(',.1f'));
+      
+          d3.select('#chart1 svg')
+              .datum(data)
+            .transition().duration(500).call(chart);
+      
+          nv.utils.windowResize(chart.update);
+      
+          chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+      
+          return chart;
+      });
+  });
 
 </script>
 
