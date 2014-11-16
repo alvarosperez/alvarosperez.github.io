@@ -240,6 +240,12 @@ self.wordcloud = function(div_id, width, height){
         "Selendroid": 2
     }
 
+    // add a tooltip
+    self.tooltip = self.container.append('div')
+        .html("")
+        .attr("class", "wordcloud_tooltip")
+        .style("opacity", 0);
+
     self.getHtml = function(value){
         var full_stars = ~~(value/2);
         var half_star = value%2;
@@ -306,12 +312,6 @@ self.wordcloud = function(div_id, width, height){
             .on("mouseout", self._mouseout)
             .on("click", function(d) { return self._click(d) })
             .text(function(d) { return d.text; });
-
-            // add a tooltip
-            self.tooltip = self.container.append('div')
-                .html("")
-                .attr("class", "wordcloud_tooltip")
-                .style("opacity", 0);
     }
 
     d3.layout.cloud().size([width, height])
