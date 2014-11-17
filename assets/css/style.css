@@ -128,12 +128,55 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	right: 0px;
 	width: 48px;
 	height: 48px;
+	vertical-align: middle;
+	text-align: center;
 }
 #projects figure .icon i {
 	font-size: 18px;
-	line-height: 18px;
-	padding: 15px;
+	line-height: 48px;
 }
+#projects figure .title { 
+	font-size: 18px;
+	background: #22A39F;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 180px;
+	height: 48px;
+	line-height: 48px;
+	vertical-align: middle;
+	text-align: center;
+}
+#projects figure .date { 
+	font-size: 14px;
+	background: #22A39F;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	text-align: center;
+}
+#projects figure .trophy { 
+	position: absolute;
+	top: 40px;
+	left: 20px;
+	width: 48px;
+	height: 48px;
+}
+
+figure.effect:hover .title {
+	opacity: 0;
+}
+figure.effect:hover .date {
+	opacity: 0;
+}
+figure.effect:hover .trophy {
+	opacity: 0;
+}
+
 
 #contact { padding-bottom: 200px; }
 #contact h2, #contact .row * { color: #FFFFFF; }
