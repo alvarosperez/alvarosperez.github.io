@@ -1,0 +1,1 @@
+[{"id":"consumo","label":"KPI","items":[{"value":"1","label":"Mean Yearly Data Usage"}],"selected":1},{"id":"period","label":"Period","items":[{"value":"1","label":"August 2014"}],"selected":1},{"id":"segment","label":"Segments","items":[{"value":"1","label":"All"},{"value":"2","label":"Bronze"},{"value":"3","label":"Silver"},{"value":"4","label":"Gold"}],"selected":1}]

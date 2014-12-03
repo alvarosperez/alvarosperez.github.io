@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KPI Viz</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700' rel='stylesheet' type='text/css' />
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.css" />
+
+    <link rel="stylesheet" href="css/viz_kpi.min.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js" charset="utf-8"></script>
+    <script src="bower_components/jquery-ui/ui/jquery-ui.js" charset="utf-8"></script>
+    <script src="bower_components/chained/jquery.chained.min.js" charset="utf-8"></script>
+    <script src="bower_components/seedrandom/seedrandom.min.js" charset="utf-8"></script>
+    <script src="bower_components/leaflet-providers/leaflet-providers.js"></script>
+
+    <script src="js/viz_kpi.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+    <div id="mapContainer" class="mapContainer">
+        <div id="map" class="map"></div>
+    </div>
+
+    <div id="controlWrapper" class="controlWrapper">
+        <div id="controlContainer" class="controlContainer">
+             <div id="tabContainer" class="tabContainer">
+                 <div name="provinces" mode="auto" class="tab provinces selected">HeatMap<br>BY DEPARTMENTS</div>
+                 <div name="distrits" mode="manual" class="tab distrits">HeatMaps<br>BY LIMA DISTRITS</div>
+             </div>
+             <div id="optionsBox" class="optionsBox">
+                <div class="infoTitle">Filter selection</div>
+             </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        self = {};
+
+        self.help = tdviz.extras.help('controlWrapper', '',{
+              'path_help': 'data/help',
+              'data_file': 'HELP_ES.json',
+              'css_path': 'css/help.css'
+        });
+        // Controller object
+        // Using leaflet-providers.js in vizOptions.tileLayer
+        // See https://github.com/leaflet-extras/leaflet-providers
+        self.mapObj = tdviz.controller.kpiViewer("map","map",
+        {
+            'baseJUrl':"data/",
+            'geoFileCountry': 'peru_geo.json',
+            'geoFileRegion': 'lima_geo_id.json',
+            'controlsFile': 'controls.json',
+            'dataFile': 'profile_peru.json',
+            'transTime':3000,
+            'debugLevel':0,
+            'vizOptions':
+            {
+                'tileLayer': L.tileLayer.provider('MapBox.evabito.h6cg4age'), //L.tileLayer.provider('Stamen.TonerLite'),
+                'initLatLng': [-12.0433, -77.0283],
+                'mapOptions':{
+                     'zoom': 5,
+                    'maxZoom': 12,
+                    'minZoom': 5
+                },
+                'hideOnZoom': true
+            }
+        });
+
+    </script>
+    <div id="logo" class="logo"><img src="bower_components/tdvizlib/common/img/logo_white.png" width="150"></div>
+</body>
+</html>
