@@ -163,8 +163,8 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 	position: absolute;
 	top: 40px;
 	left: 20px;
-	width: 48px;
-	height: 48px;
+	width: 100px;
+	height: 100px;
 }
 
 figure.effect:hover .title {
