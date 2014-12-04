@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Time Based Area Graph</title>
+    
+    <script type="text/javascript" src="lib/viz_timegraph.min.js"></script>
+    <link href="lib/viz_timegraph.min.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: #dfdfdf">
+
+    <div id="chart" style="width:50%; height:500px"></div>
+    <!-- <div id="chart2" style="width:50%; height:500px"></div> -->
+
+    <script type="text/javascript">
+        var chart1 = tdviz.areaChart(
+          {
+            'div_id': "chart",
+            'dataFile': "webprof.json",
+            'dataPath': "data"
+          });
+
+        //var chart2 = tdviz.areaChart(
+        //  {
+        //    'div_id': "chart2",
+        //    'dataFile': "webprof.json",
+        //    'dataPath': "data"
+        //  });
+    </script>
+
+</body>
+</html>
