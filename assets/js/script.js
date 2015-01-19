@@ -227,6 +227,7 @@ self.wordcloud = function(div_id, width, height){
         "MySQL": 4,
         "MongoDB": 2,
         "Scala": 2,
+        "R": 3,
         "Sublime Text": 8,
         "Jira": 8,
         "Git": 8,
