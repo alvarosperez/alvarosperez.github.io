@@ -238,7 +238,8 @@ self.wordcloud = function(div_id, width, height){
         "Sonar": 6,
         "Selenium": 4,
         "Robotium": 2,
-        "Selendroid": 2
+        "Selendroid": 2,
+        "QGIS": 4
     }
 
     // add a tooltip
