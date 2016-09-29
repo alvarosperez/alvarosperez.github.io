@@ -257,7 +257,8 @@ self.wordcloud = function(div_id, width, height){
 
     self.container = d3.select("#"+div_id);
 
-    var skills = {} // abilities + tools
+    var skills = $.extend({}, ability, tools);
+
 
     // add a tooltip
     self.tooltip = self.container.append('div')
