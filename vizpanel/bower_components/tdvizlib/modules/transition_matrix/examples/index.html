@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Cluster Transitions Visualization</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="../lib/correxplorer.css">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+
+  <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>  
+  <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+
+  <script type='text/javascript' src="../lib/correxplorer.js"></script>
+  <script type='text/javascript' src="js/help.js"></script>
+</head>
+
+<body>
+    <div id="divChart1" style="position:relative;width:1024px;height:768px;"></div>
+    <div id="divChart2" style="position:relative;width:1024px;height:768px"></div>
+
+    <script type="text/javascript">
+
+      var chart1 = tdviz.cluster(
+      {
+        //mandatory
+        'parent_id': 'divChart1',
+        'dataFile': './data/csv_matrix.csv',
+        'dataType': 'csv',
+        //optional
+        'unit': '%',
+        'origin_cluster': 'Nov 2012',
+        'final_cluster': 'Mar 2013',
+        'decimals': 2,
+        'zoom_level': 0.7,
+        'debug_level': 3,
+        'language': 'ES',
+        'libPath': '../lib'
+      });
+
+      var help1 = tdviz.extras.help('divChart1', '',{
+              'path_help': '../lib/doc',
+              'data_file': 'HELP_ES.json'
+      });
+
+      var chart2 = tdviz.cluster(
+      {
+        //mandatory
+        'parent_id': 'divChart2',
+        'dataFile': './data/tab_matrix.tsv',
+        'dataType': 'tsv',
+        //optional
+        'unit': '%',
+        'origin_cluster': 'Nov 2012',
+        'final_cluster': 'Mar 2013',
+        'decimals': 2,
+        'zoom_level': 0.7,
+        'debug_level': 3,
+        'language': 'EN',
+        'libPath': '../lib'
+      });
+
+      var help2 = tdviz.extras.help('divChart2', '',{
+              'path_help': '../lib/doc',
+              'data_file': 'HELP_EN.json'
+      });
+    </script>
+</body>
+</html>

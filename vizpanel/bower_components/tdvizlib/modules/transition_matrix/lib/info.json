@@ -1,0 +1,25 @@
+{
+    "EN":{
+        "order": "Already in order",
+        "menu_1": "Hovering over a label or square will give you information about its values.",
+        "menu_2": "Click on a label to sort according to it.",
+        "sort": "Sort",
+        "sort_alphabet": "Alphabetically",
+        "sort_value": "by Value",
+        "sort_similar": "by Similarity",
+        "sort_original": "Original",
+        "value": "Value"
+    },
+    "ES":{
+        "order": "Ya ordenado",
+        "menu_1": "Pasar el ratón por una etiqueta o cuadrado muestra información de sus valores.",
+        "menu_2": "Haga click en una etiqueta para ordenar.",
+        "sort": "Ordenar",
+        "sort_alphabet": "Alfabéticamente",
+        "sort_value": "por Valor",
+        "sort_similar": "por Similaridad",
+        "sort_original": "Original",
+        "value": "Valor"
+    }
+
+} 

@@ -1,0 +1,944 @@
+category;count
+15/Diving;4
+15/Fencing;1
+15/Gymnastics;7
+15/Ice Hockey;1
+15/Rhythmic Gymnastics;2
+15/Short-Track Speed Skating;3
+15/Swimming;5
+16/Diving;10
+16/Figure Skating;1
+16/Football;1
+16/Gymnastics;39
+16/Ice Hockey;3
+16/Rhythmic Gymnastics;9
+16/Swimming;16
+16/Table Tennis;1
+17/Archery;5
+17/Athletics;2
+17/Basketball;1
+17/Boxing;3
+17/Diving;5
+17/Fencing;1
+17/Football;1
+17/Gymnastics;22
+17/Ice Hockey;3
+17/Judo;1
+17/Nordic Combined;1
+17/Rhythmic Gymnastics;16
+17/Shooting;1
+17/Short-Track Speed Skating;7
+17/Swimming;28
+17/Taekwondo;3
+17/Weightlifting;4
+18/Archery;1
+18/Athletics;6
+18/Basketball;1
+18/Boxing;1
+18/Canoeing;2
+18/Cycling;1
+18/Diving;11
+18/Fencing;3
+18/Football;5
+18/Gymnastics;26
+18/Handball;1
+18/Hockey;2
+18/Ice Hockey;7
+18/Judo;2
+18/Nordic Combined;2
+18/Rhythmic Gymnastics;16
+18/Short-Track Speed Skating;10
+18/Ski Jumping;2
+18/Snowboarding;2
+18/Swimming;39
+18/Synchronized Swimming;3
+18/Taekwondo;2
+18/Tennis;3
+18/Trampoline;1
+18/Volleyball;1
+18/Waterpolo;1
+18/Weightlifting;2
+18/Wrestling;2
+19/Archery;5
+19/Athletics;18
+19/Badminton;1
+19/Baseball;2
+19/Basketball;3
+19/Beach Volleyball;1
+19/Boxing;8
+19/Canoeing;4
+19/Cross Country Skiing;1
+19/Cycling;2
+19/Diving;8
+19/Fencing;8
+19/Figure Skating;3
+19/Football;16
+19/Freestyle Skiing;1
+19/Gymnastics;19
+19/Handball;1
+19/Hockey;7
+19/Ice Hockey;7
+19/Judo;3
+19/Rhythmic Gymnastics;15
+19/Rowing;1
+19/Sailing;1
+19/Shooting;5
+19/Short-Track Speed Skating;16
+19/Ski Jumping;2
+19/Snowboarding;3
+19/Softball;1
+19/Speed Skating;6
+19/Swimming;45
+19/Synchronized Swimming;2
+19/Table Tennis;2
+19/Taekwondo;6
+19/Trampoline;3
+19/Volleyball;4
+19/Waterpolo;9
+19/Weightlifting;11
+19/Wrestling;2
+20/Alpine Skiing;7
+20/Archery;6
+20/Athletics;21
+20/Badminton;1
+20/Baseball;11
+20/Basketball;6
+20/Boxing;14
+20/Canoeing;8
+20/Cross Country Skiing;2
+20/Cycling;18
+20/Diving;6
+20/Fencing;7
+20/Figure Skating;3
+20/Football;34
+20/Freestyle Skiing;1
+20/Gymnastics;24
+20/Handball;2
+20/Hockey;5
+20/Ice Hockey;18
+20/Judo;8
+20/Luge;1
+20/Nordic Combined;3
+20/Rhythmic Gymnastics;7
+20/Rowing;5
+20/Sailing;1
+20/Shooting;2
+20/Short-Track Speed Skating;13
+20/Ski Jumping;8
+20/Snowboarding;2
+20/Softball;4
+20/Speed Skating;9
+20/Swimming;65
+20/Synchronized Swimming;8
+20/Table Tennis;5
+20/Taekwondo;9
+20/Tennis;3
+20/Trampoline;1
+20/Volleyball;5
+20/Waterpolo;8
+20/Weightlifting;13
+20/Wrestling;8
+21/Alpine Skiing;2
+21/Archery;10
+21/Athletics;45
+21/Badminton;5
+21/Baseball;11
+21/Basketball;5
+21/Biathlon;4
+21/Bobsleigh;1
+21/Boxing;17
+21/Canoeing;19
+21/Cross Country Skiing;4
+21/Cycling;12
+21/Diving;14
+21/Fencing;12
+21/Figure Skating;6
+21/Football;45
+21/Freestyle Skiing;4
+21/Gymnastics;19
+21/Handball;5
+21/Hockey;13
+21/Ice Hockey;10
+21/Judo;11
+21/Nordic Combined;1
+21/Rhythmic Gymnastics;5
+21/Rowing;14
+21/Sailing;6
+21/Shooting;4
+21/Short-Track Speed Skating;12
+21/Skeleton;1
+21/Ski Jumping;3
+21/Snowboarding;2
+21/Softball;3
+21/Speed Skating;9
+21/Swimming;89
+21/Synchronized Swimming;20
+21/Table Tennis;3
+21/Taekwondo;12
+21/Tennis;2
+21/Trampoline;2
+21/Volleyball;10
+21/Waterpolo;21
+21/Weightlifting;12
+21/Wrestling;15
+22/Alpine Skiing;1
+22/Archery;3
+22/Athletics;74
+22/Badminton;10
+22/Baseball;17
+22/Basketball;14
+22/Beach Volleyball;1
+22/Biathlon;5
+22/Bobsleigh;1
+22/Boxing;21
+22/Canoeing;27
+22/Cross Country Skiing;6
+22/Curling;1
+22/Cycling;15
+22/Diving;16
+22/Fencing;15
+22/Figure Skating;2
+22/Football;75
+22/Freestyle Skiing;4
+22/Gymnastics;21
+22/Handball;17
+22/Hockey;28
+22/Ice Hockey;34
+22/Judo;16
+22/Luge;3
+22/Modern Pentathlon;2
+22/Nordic Combined;8
+22/Rhythmic Gymnastics;7
+22/Rowing;26
+22/Sailing;5
+22/Shooting;6
+22/Short-Track Speed Skating;7
+22/Ski Jumping;3
+22/Snowboarding;5
+22/Softball;8
+22/Speed Skating;9
+22/Swimming;97
+22/Synchronized Swimming;21
+22/Table Tennis;7
+22/Taekwondo;10
+22/Tennis;8
+22/Triathlon;2
+22/Volleyball;14
+22/Waterpolo;16
+22/Weightlifting;18
+22/Wrestling;14
+23/Alpine Skiing;4
+23/Archery;11
+23/Athletics;63
+23/Badminton;11
+23/Baseball;18
+23/Basketball;27
+23/Beach Volleyball;1
+23/Biathlon;7
+23/Bobsleigh;1
+23/Boxing;25
+23/Canoeing;27
+23/Cross Country Skiing;9
+23/Curling;3
+23/Cycling;16
+23/Diving;12
+23/Fencing;19
+23/Figure Skating;6
+23/Football;67
+23/Freestyle Skiing;4
+23/Gymnastics;27
+23/Handball;27
+23/Hockey;30
+23/Ice Hockey;21
+23/Judo;23
+23/Luge;1
+23/Nordic Combined;3
+23/Rowing;39
+23/Sailing;9
+23/Shooting;10
+23/Short-Track Speed Skating;15
+23/Ski Jumping;3
+23/Snowboarding;5
+23/Softball;13
+23/Speed Skating;11
+23/Swimming;72
+23/Synchronized Swimming;8
+23/Table Tennis;7
+23/Taekwondo;10
+23/Tennis;5
+23/Trampoline;7
+23/Triathlon;2
+23/Volleyball;16
+23/Waterpolo;21
+23/Weightlifting;23
+23/Wrestling;18
+24/Alpine Skiing;14
+24/Archery;11
+24/Athletics;59
+24/Badminton;11
+24/Baseball;18
+24/Basketball;25
+24/Beach Volleyball;2
+24/Biathlon;12
+24/Bobsleigh;4
+24/Boxing;21
+24/Canoeing;24
+24/Cross Country Skiing;13
+24/Curling;3
+24/Cycling;29
+24/Diving;5
+24/Equestrian;2
+24/Fencing;16
+24/Figure Skating;7
+24/Football;21
+24/Freestyle Skiing;1
+24/Gymnastics;25
+24/Handball;20
+24/Hockey;41
+24/Ice Hockey;29
+24/Judo;19
+24/Luge;3
+24/Modern Pentathlon;2
+24/Nordic Combined;6
+24/Rhythmic Gymnastics;5
+24/Rowing;46
+24/Sailing;16
+24/Shooting;14
+24/Short-Track Speed Skating;14
+24/Skeleton;2
+24/Ski Jumping;9
+24/Snowboarding;8
+24/Softball;19
+24/Speed Skating;8
+24/Swimming;82
+24/Synchronized Swimming;8
+24/Table Tennis;16
+24/Taekwondo;14
+24/Tennis;3
+24/Trampoline;1
+24/Triathlon;1
+24/Volleyball;21
+24/Waterpolo;30
+24/Weightlifting;18
+24/Wrestling;29
+25/Alpine Skiing;9
+25/Archery;3
+25/Athletics;71
+25/Badminton;15
+25/Baseball;11
+25/Basketball;18
+25/Beach Volleyball;3
+25/Biathlon;7
+25/Bobsleigh;4
+25/Boxing;16
+25/Canoeing;31
+25/Cross Country Skiing;12
+25/Curling;3
+25/Cycling;29
+25/Diving;13
+25/Equestrian;4
+25/Fencing;23
+25/Figure Skating;2
+25/Football;18
+25/Freestyle Skiing;4
+25/Gymnastics;7
+25/Handball;23
+25/Hockey;34
+25/Ice Hockey;33
+25/Judo;26
+25/Luge;1
+25/Modern Pentathlon;3
+25/Nordic Combined;1
+25/Rhythmic Gymnastics;2
+25/Rowing;57
+25/Sailing;12
+25/Shooting;7
+25/Short-Track Speed Skating;14
+25/Skeleton;2
+25/Ski Jumping;2
+25/Snowboarding;2
+25/Softball;5
+25/Speed Skating;10
+25/Swimming;65
+25/Synchronized Swimming;23
+25/Table Tennis;6
+25/Taekwondo;13
+25/Tennis;9
+25/Trampoline;1
+25/Triathlon;1
+25/Volleyball;32
+25/Waterpolo;29
+25/Weightlifting;18
+25/Wrestling;29
+26/Alpine Skiing;8
+26/Archery;8
+26/Athletics;76
+26/Badminton;8
+26/Baseball;13
+26/Basketball;27
+26/Biathlon;7
+26/Bobsleigh;1
+26/Boxing;20
+26/Canoeing;34
+26/Cross Country Skiing;4
+26/Curling;6
+26/Cycling;27
+26/Diving;21
+26/Equestrian;4
+26/Fencing;25
+26/Figure Skating;2
+26/Football;21
+26/Freestyle Skiing;3
+26/Gymnastics;11
+26/Handball;29
+26/Hockey;43
+26/Ice Hockey;26
+26/Judo;26
+26/Luge;2
+26/Modern Pentathlon;3
+26/Nordic Combined;5
+26/Rowing;54
+26/Sailing;14
+26/Shooting;9
+26/Short-Track Speed Skating;9
+26/Skeleton;1
+26/Ski Jumping;1
+26/Snowboarding;3
+26/Softball;16
+26/Speed Skating;10
+26/Swimming;39
+26/Synchronized Swimming;9
+26/Table Tennis;5
+26/Taekwondo;10
+26/Tennis;10
+26/Trampoline;4
+26/Triathlon;1
+26/Volleyball;23
+26/Waterpolo;35
+26/Weightlifting;19
+26/Wrestling;33
+27/Alpine Skiing;8
+27/Archery;8
+27/Athletics;66
+27/Badminton;12
+27/Baseball;15
+27/Basketball;31
+27/Beach Volleyball;7
+27/Biathlon;10
+27/Bobsleigh;7
+27/Boxing;8
+27/Canoeing;23
+27/Cross Country Skiing;13
+27/Curling;5
+27/Cycling;19
+27/Diving;5
+27/Equestrian;8
+27/Fencing;17
+27/Figure Skating;5
+27/Football;20
+27/Freestyle Skiing;7
+27/Gymnastics;17
+27/Handball;34
+27/Hockey;46
+27/Ice Hockey;24
+27/Judo;21
+27/Luge;3
+27/Modern Pentathlon;2
+27/Nordic Combined;8
+27/Rowing;47
+27/Sailing;17
+27/Shooting;8
+27/Short-Track Speed Skating;5
+27/Skeleton;1
+27/Ski Jumping;6
+27/Snowboarding;2
+27/Softball;13
+27/Speed Skating;9
+27/Swimming;55
+27/Synchronized Swimming;7
+27/Table Tennis;7
+27/Taekwondo;5
+27/Tennis;6
+27/Triathlon;5
+27/Volleyball;29
+27/Waterpolo;24
+27/Weightlifting;8
+27/Wrestling;21
+28/Alpine Skiing;10
+28/Archery;5
+28/Athletics;62
+28/Badminton;7
+28/Baseball;21
+28/Basketball;32
+28/Beach Volleyball;2
+28/Biathlon;13
+28/Bobsleigh;8
+28/Boxing;9
+28/Canoeing;28
+28/Cross Country Skiing;15
+28/Curling;5
+28/Cycling;22
+28/Diving;1
+28/Equestrian;2
+28/Fencing;18
+28/Figure Skating;5
+28/Football;16
+28/Freestyle Skiing;4
+28/Gymnastics;9
+28/Handball;37
+28/Hockey;47
+28/Ice Hockey;23
+28/Judo;24
+28/Luge;4
+28/Modern Pentathlon;6
+28/Nordic Combined;4
+28/Rowing;60
+28/Sailing;15
+28/Shooting;14
+28/Short-Track Speed Skating;3
+28/Skeleton;2
+28/Ski Jumping;5
+28/Snowboarding;3
+28/Softball;10
+28/Speed Skating;10
+28/Swimming;33
+28/Synchronized Swimming;4
+28/Table Tennis;7
+28/Taekwondo;8
+28/Tennis;6
+28/Trampoline;1
+28/Triathlon;1
+28/Volleyball;23
+28/Waterpolo;22
+28/Weightlifting;15
+28/Wrestling;20
+29/Alpine Skiing;5
+29/Archery;4
+29/Athletics;42
+29/Badminton;6
+29/Baseball;15
+29/Basketball;23
+29/Beach Volleyball;5
+29/Biathlon;14
+29/Bobsleigh;10
+29/Boxing;6
+29/Canoeing;23
+29/Cross Country Skiing;31
+29/Curling;2
+29/Cycling;17
+29/Diving;5
+29/Equestrian;10
+29/Fencing;17
+29/Figure Skating;2
+29/Football;14
+29/Freestyle Skiing;3
+29/Gymnastics;1
+29/Handball;33
+29/Hockey;20
+29/Ice Hockey;24
+29/Judo;14
+29/Luge;3
+29/Modern Pentathlon;2
+29/Nordic Combined;5
+29/Rowing;60
+29/Sailing;14
+29/Shooting;7
+29/Short-Track Speed Skating;6
+29/Ski Jumping;4
+29/Snowboarding;2
+29/Softball;7
+29/Speed Skating;14
+29/Swimming;10
+29/Synchronized Swimming;9
+29/Table Tennis;4
+29/Taekwondo;6
+29/Tennis;1
+29/Triathlon;3
+29/Volleyball;20
+29/Waterpolo;21
+29/Weightlifting;6
+29/Wrestling;22
+30/Alpine Skiing;5
+30/Archery;3
+30/Athletics;41
+30/Badminton;3
+30/Baseball;13
+30/Basketball;18
+30/Beach Volleyball;4
+30/Biathlon;10
+30/Bobsleigh;3
+30/Boxing;9
+30/Canoeing;24
+30/Cross Country Skiing;14
+30/Curling;6
+30/Cycling;19
+30/Diving;5
+30/Equestrian;9
+30/Fencing;27
+30/Figure Skating;5
+30/Football;17
+30/Freestyle Skiing;2
+30/Gymnastics;3
+30/Handball;15
+30/Hockey;24
+30/Ice Hockey;26
+30/Judo;10
+30/Luge;1
+30/Modern Pentathlon;1
+30/Nordic Combined;4
+30/Rowing;33
+30/Sailing;14
+30/Shooting;12
+30/Short-Track Speed Skating;2
+30/Skeleton;1
+30/Ski Jumping;1
+30/Snowboarding;3
+30/Softball;9
+30/Speed Skating;9
+30/Swimming;7
+30/Synchronized Swimming;1
+30/Table Tennis;4
+30/Taekwondo;1
+30/Tennis;9
+30/Trampoline;1
+30/Triathlon;1
+30/Volleyball;21
+30/Waterpolo;20
+30/Weightlifting;2
+30/Wrestling;14
+31/Alpine Skiing;2
+31/Archery;1
+31/Athletics;26
+31/Baseball;16
+31/Basketball;19
+31/Beach Volleyball;6
+31/Biathlon;11
+31/Bobsleigh;8
+31/Boxing;4
+31/Canoeing;12
+31/Cross Country Skiing;12
+31/Curling;3
+31/Cycling;19
+31/Diving;1
+31/Equestrian;9
+31/Fencing;10
+31/Figure Skating;2
+31/Football;11
+31/Freestyle Skiing;1
+31/Gymnastics;3
+31/Handball;29
+31/Hockey;18
+31/Ice Hockey;21
+31/Judo;3
+31/Luge;3
+31/Modern Pentathlon;1
+31/Rowing;30
+31/Sailing;17
+31/Shooting;7
+31/Short-Track Speed Skating;1
+31/Ski Jumping;2
+31/Snowboarding;3
+31/Softball;3
+31/Speed Skating;6
+31/Swimming;2
+31/Synchronized Swimming;6
+31/Table Tennis;6
+31/Taekwondo;2
+31/Trampoline;1
+31/Triathlon;2
+31/Volleyball;13
+31/Waterpolo;14
+31/Weightlifting;5
+31/Wrestling;6
+32/Alpine Skiing;11
+32/Archery;5
+32/Athletics;26
+32/Badminton;3
+32/Baseball;6
+32/Basketball;14
+32/Biathlon;11
+32/Bobsleigh;11
+32/Boxing;3
+32/Canoeing;20
+32/Cross Country Skiing;14
+32/Curling;3
+32/Cycling;16
+32/Diving;1
+32/Equestrian;7
+32/Fencing;7
+32/Figure Skating;1
+32/Football;9
+32/Freestyle Skiing;1
+32/Handball;23
+32/Hockey;12
+32/Ice Hockey;19
+32/Judo;10
+32/Luge;3
+32/Nordic Combined;1
+32/Rowing;32
+32/Sailing;11
+32/Shooting;7
+32/Skeleton;1
+32/Ski Jumping;3
+32/Softball;6
+32/Speed Skating;5
+32/Swimming;5
+32/Table Tennis;2
+32/Taekwondo;1
+32/Tennis;3
+32/Volleyball;14
+32/Waterpolo;13
+32/Weightlifting;1
+32/Wrestling;4
+33/Alpine Skiing;3
+33/Athletics;12
+33/Badminton;2
+33/Baseball;7
+33/Basketball;9
+33/Beach Volleyball;3
+33/Biathlon;5
+33/Bobsleigh;2
+33/Boxing;3
+33/Canoeing;4
+33/Cross Country Skiing;10
+33/Curling;5
+33/Cycling;3
+33/Equestrian;4
+33/Fencing;10
+33/Figure Skating;1
+33/Football;10
+33/Freestyle Skiing;2
+33/Gymnastics;1
+33/Handball;14
+33/Hockey;9
+33/Ice Hockey;12
+33/Judo;5
+33/Modern Pentathlon;1
+33/Nordic Combined;1
+33/Rowing;22
+33/Sailing;5
+33/Shooting;10
+33/Skeleton;4
+33/Snowboarding;1
+33/Softball;6
+33/Speed Skating;10
+33/Swimming;7
+33/Tennis;1
+33/Triathlon;3
+33/Volleyball;11
+33/Waterpolo;8
+33/Weightlifting;1
+33/Wrestling;4
+34/Alpine Skiing;1
+34/Archery;1
+34/Athletics;19
+34/Badminton;1
+34/Baseball;4
+34/Basketball;4
+34/Beach Volleyball;8
+34/Biathlon;14
+34/Bobsleigh;2
+34/Canoeing;6
+34/Cross Country Skiing;6
+34/Curling;6
+34/Cycling;12
+34/Diving;1
+34/Equestrian;6
+34/Fencing;9
+34/Football;2
+34/Gymnastics;1
+34/Handball;10
+34/Hockey;4
+34/Ice Hockey;8
+34/Judo;2
+34/Luge;3
+34/Nordic Combined;1
+34/Rowing;14
+34/Sailing;6
+34/Shooting;12
+34/Short-Track Speed Skating;1
+34/Snowboarding;1
+34/Softball;2
+34/Speed Skating;1
+34/Table Tennis;1
+34/Tennis;6
+34/Trampoline;1
+34/Triathlon;1
+34/Volleyball;8
+34/Waterpolo;4
+34/Weightlifting;2
+34/Wrestling;2
+35/Athletics;7
+35/Baseball;8
+35/Basketball;4
+35/Beach Volleyball;4
+35/Biathlon;2
+35/Bobsleigh;3
+35/Canoeing;4
+35/Cross Country Skiing;2
+35/Curling;5
+35/Cycling;10
+35/Equestrian;8
+35/Fencing;1
+35/Football;1
+35/Handball;13
+35/Hockey;1
+35/Ice Hockey;15
+35/Luge;2
+35/Modern Pentathlon;1
+35/Rowing;9
+35/Sailing;8
+35/Shooting;8
+35/Skeleton;1
+35/Softball;2
+35/Speed Skating;3
+35/Table Tennis;1
+35/Tennis;1
+35/Triathlon;1
+35/Volleyball;4
+35/Waterpolo;1
+35/Weightlifting;2
+35/Wrestling;1
+36/Archery;1
+36/Athletics;9
+36/Baseball;3
+36/Basketball;5
+36/Biathlon;4
+36/Bobsleigh;2
+36/Canoeing;7
+36/Cross Country Skiing;1
+36/Curling;3
+36/Cycling;6
+36/Equestrian;5
+36/Fencing;4
+36/Figure Skating;1
+36/Football;2
+36/Handball;11
+36/Hockey;2
+36/Ice Hockey;8
+36/Luge;2
+36/Rowing;7
+36/Sailing;13
+36/Shooting;5
+36/Snowboarding;1
+36/Softball;1
+36/Swimming;1
+36/Tennis;1
+36/Volleyball;4
+36/Waterpolo;6
+36/Wrestling;1
+37/Athletics;2
+37/Baseball;6
+37/Basketball;1
+37/Bobsleigh;2
+37/Cross Country Skiing;2
+37/Curling;2
+37/Cycling;2
+37/Equestrian;10
+37/Football;1
+37/Handball;1
+37/Ice Hockey;5
+37/Luge;1
+37/Rowing;4
+37/Sailing;3
+37/Shooting;9
+37/Skeleton;1
+37/Softball;2
+37/Speed Skating;1
+37/Waterpolo;1
+38/Athletics;3
+38/Baseball;1
+38/Canoeing;2
+38/Cross Country Skiing;2
+38/Curling;5
+38/Cycling;4
+38/Equestrian;4
+38/Fencing;4
+38/Handball;3
+38/Ice Hockey;2
+38/Rowing;5
+38/Sailing;6
+38/Shooting;6
+38/Softball;3
+38/Tennis;1
+38/Volleyball;3
+38/Waterpolo;1
+39/Archery;1
+39/Athletics;1
+39/Beach Volleyball;1
+39/Biathlon;1
+39/Bobsleigh;2
+39/Canoeing;1
+39/Curling;4
+39/Cycling;4
+39/Equestrian;9
+39/Fencing;2
+39/Handball;1
+39/Ice Hockey;1
+39/Rowing;3
+39/Sailing;2
+39/Shooting;6
+39/Skeleton;1
+39/Volleyball;2
+39/Waterpolo;1
+40/Athletics;2
+40/Biathlon;1
+40/Cycling;1
+40/Equestrian;12
+40/Handball;1
+40/Ice Hockey;2
+40/Rowing;5
+40/Sailing;5
+40/Shooting;5
+41/Archery;1
+41/Cross Country Skiing;1
+41/Curling;2
+41/Cycling;1
+41/Equestrian;6
+41/Ice Hockey;2
+41/Shooting;4
+41/Softball;1
+41/Swimming;3
+42/Canoeing;2
+42/Cycling;1
+42/Equestrian;12
+42/Handball;1
+42/Rowing;1
+42/Sailing;3
+42/Shooting;2
+43/Archery;1
+43/Canoeing;1
+43/Curling;5
+43/Cycling;1
+43/Equestrian;8
+43/Sailing;1
+43/Shooting;1
+44/Curling;1
+44/Equestrian;10
+44/Rowing;1
+44/Sailing;2
+44/Shooting;2
+45/Archery;1
+45/Curling;2
+45/Equestrian;8
+45/Shooting;3
+46/Curling;1
+46/Equestrian;9
+46/Sailing;3
+46/Shooting;4
+47/Equestrian;4
+47/Sailing;1
+47/Shooting;1
+48/Equestrian;1
+49/Curling;1
+49/Equestrian;2
+49/Shooting;1
+50/Equestrian;2
+51/Archery;1
+51/Equestrian;2
+52/Equestrian;1
+52/Rowing;1
+54/Equestrian;1
+55/Equestrian;1
+56/Equestrian;1
+61/Equestrian;1

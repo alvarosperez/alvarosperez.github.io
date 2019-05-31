@@ -1,0 +1,512 @@
+/* Map styles */
+
+html, body, #map {
+    height: 100%;
+    width: 100%;
+}
+#map, #chartContent, #vizParent, #container{
+    /*height:800px;*/
+    /*width:1200px;*/
+    height:100%;
+}
+
+h1{
+    font-size:30px;
+}
+
+.map
+{
+}
+
+.map .polygons {
+    fill-opacity: 0.5;
+    fill: #FFF;
+    stroke: #000;
+    stroke-width: 0.5px;
+    stroke-opacity: 0.3;
+    cursor: pointer;
+}
+
+.map .polygons:hover {
+    fill-opacity: 0.7;
+    stroke-opacity: 1.0;
+    stroke-width: 1px;
+}
+
+.tooltip
+{
+    position: absolute;
+    padding: 10px;
+    font: 15px Helvetica Neue;
+    background: #FFF;
+    color: #3C3C3B;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: none;
+    z-order:1000;
+    text-align:center;
+    font-weight:400;
+}
+
+body
+{
+    margin-top:0px;
+    padding-top:0px;
+    cursor:default;
+    background-color:#FFF;
+}
+
+#left-nav {
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left:0px;
+    bottom: 0px;
+    background: rgba(72,75,76,0.9); /*#484B4C;*/
+    border-right: solid 1px #000;
+    color: #ddd;
+}
+
+#left-nav>.welcome {
+    padding: 8px;
+}
+
+#left-nav>.list>li {
+    border-bottom: solid 1px #444;
+    padding: 8px;
+}
+
+.list-item:not(:first-of-type) {
+    border-top: solid 1px #555;
+}
+
+#left-nav>.list>.list-item h3 {
+    margin: 0px;
+    font-size: 16px;
+    color: #e5e5e5;
+}
+
+#left-nav>.list>.list-item p {
+    margin: 0px;
+}
+
+#left-nav>.list>li:active {
+    background-color: #0c65a4;
+}
+
+#left-nav>.title {
+    background: #444;
+    /*opacity: .3;*/
+    padding: 4px;
+    border-top: solid 1px #555;
+    border-bottom: solid 1px #333;
+    /*border-bottom: solid 1px #555;*/
+}
+
+.list-item.active {
+    background-color: #0c65a4;
+}
+
+#left-nav>.list>.list-item>.item-content>.icon {
+    font-size: 28px;
+    float:left;
+    margin-top: 4px;
+    margin-right: 8px;
+    height: 28px;
+}
+
+#container {
+    background: #ffffff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#container.offset {
+    -webkit-transform: translate3d(200px, 0, 0);
+    transform: translate3d(200px, 0, 0);
+}
+
+#container.transition {
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+}
+
+#content {
+    position: absolute;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    top: 44px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: #ffffff;
+}
+
+.scale_colors
+{
+    font-size:8px;
+    height:20px;
+
+}
+
+.country
+{
+    font-size:8px;
+    height:20px;
+}
+.color
+{
+    font-size:8px;
+}
+
+#separator_control{
+    font-size: 12px;
+    margin: 10px 23px;
+    line-height: 21px;
+}
+#separator_control > input {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+    margin-left: 5px;
+    padding: 0px;
+    padding-left: 5px;
+}
+
+#left-nav > hr{
+    border-width: 0px;
+    height: 1px;
+    color: white;
+    background: #444;
+    margin: 0px;
+}
+
+.controls{
+    /*position: absolute;
+    bottom: 90px;
+    left: 0px;*/
+    margin: 10px 23px;
+    z-index: 9999;
+    font-size: 8px;
+}
+
+.bottom_left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+    z-index: 0;
+    pointer-events: none;
+    z-index: 1000000;
+}
+
+.bottom_right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#drop_zone
+{
+    font-family: Helvetica Neue, Helvetica, Arial;
+    position: absolute;
+    top: 2px;
+    right: 90px;
+    width: 22%;
+    height: 65px;
+    text-align: center;
+    font-size: 30px;
+    color: #ccc;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    z-index: 15;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+
+/* ------------------- */
+
+#vizParent {
+    margin-top: 70px;
+}
+
+.vizParent .leyendaInterior
+{
+    font-size: 2px;
+    font-family: "Arial",sans-serif;
+    color: #FFF;
+    fill: #FFF;
+    pointer-events: none;
+}
+
+.vizParent .leyendaHija
+{
+    text-align: center;
+}
+
+
+.vizParent .text {
+  font: 10px sans-serif;
+}
+
+.vizParent .textWarning
+{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 30px;
+    fill: #000;
+    stroke-width: 0px;
+    fill-opacity: 1.0;
+}
+
+.vizParent .label
+{
+        fill: #777;
+}
+
+.vizParent .contenedorTodo
+{
+    margin-left: auto;
+    margin-right: auto;
+    width:960px;
+
+}
+
+.vizParent .contenedorCI
+{
+
+}
+
+.vizParent .zonaChart
+{
+    float:left;
+    background-color:#000;
+
+}
+
+
+/*Treemap styles*/
+
+.vizParent .rectNode
+{
+    stroke: #FFF;
+    stroke-width: 5px;
+}
+
+/* ChordChart styles */
+
+.vizParent .chords{
+    fill-opacity: .8;
+    stroke: #000;
+    stroke-width: .5px;
+    stroke-opacity: 0.2;
+    cursor:pointer;
+}
+.vizParent .groups{
+    stroke-width: .5px;
+    stroke-opacity: 1.0;
+    cursor:pointer;
+}
+
+.vizParent .siteText
+{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    fill: #000;
+    stroke-width: 0px;
+    fill-opacity: 1.0;
+}
+
+#floatingDiv
+{
+    position: absolute;
+    top: 100px;
+    right: 15px;
+    width: 180px;
+    height: 55px;
+    padding: 8px;
+    font: 10px sans-serif;
+    background: #FFF;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity:0;
+    z-order:1000;
+}
+
+.vizParent .tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    padding: 8px;
+    font: 10px Helvetica Neue;
+    background: #FFF;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: none;
+    z-order:1000;
+}
+
+.vizParent .tooltip .big{
+    font: 15px sans-serif;
+}
+
+.vizParent .tooltip .medium{
+    font: 12px sans-serif;
+}
+
+.options
+{
+    min-height: 80px;
+    font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+#image_header
+{
+    float:left;
+    margin: 15px;
+}
+
+
+/* ---- */
+.toast-center-center {
+    top: 200px;
+    right: 0;
+    width: 100%;
+}
+
+#toast-container.toast-center-center > div {
+    width: 300px;
+    margin: auto;
+}
+
+.toast.toast-info {
+    padding: 0px !important;
+    -webkit-user-select: initial;
+}
+
+.toast.toast-info button{
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.toast.toast-info .toast-title{
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.toast.toast-info .toast-message{
+    padding-left: 50px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+span.viz_name {
+    color: #0c65a4;
+}
+
+.initial-help {
+    position: absolute;
+    pointer-events: none;
+}
+
+.ini-help {
+    top: 7px;
+    right: 0px;
+    z-index: 100;
+}
+
+.ini-export {
+    top: 48px;
+    right: 20px;
+    z-index: 100;
+}
+
+.ini-menu {
+    top: 45px;
+    left: 220px;
+    z-index: 100;
+}
+
+.ini-text {
+    top: 320px;
+    left: 200px;
+    z-index: 100;
+}
+
+.ini-type {
+    top: 150px;
+    left: 200px;
+    z-index: 1000000;
+}
+
+.ini-current {
+    top: 55px;
+    right: 50%;
+    left: 50%;
+    z-index: 100;
+}
+.ini-tutorial {
+    bottom: 60px;
+    right: 15%;
+    z-index: 100;
+    pointer-events: all;
+}
+.ini-drop {
+    top: 60px;
+    right: 15%;
+    z-index: 100;
+}
+
+
+#help {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    z-index: 150;
+    /*font-size: 30px;
+    line-height: 65px;*/
+    color: #444444;
+}
+
+#help > i{
+    top: 2px;
+    font-size: 30px;
+    line-height: 65px;
+    cursor: pointer;
+}
+
+#export {
+    position: absolute;
+    right: 50px;
+    top: 3px;
+    z-index: 15;
+    font-size: 30px;
+    line-height: 65px;
+    color: #444444;
+    cursor: pointer;
+    z-index: 150;
+}
+
+#export:hover{
+    color:#4E6876;
+}
+
+.version{
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    color: rgba(0,0,0,0.8);
+    font-size: 14px;
+    line-height: 14px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PunchCard</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
+    <link href='../lib/punchcard.css' rel='stylesheet' type='text/css'>
+
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="bower_components/d3/d3.min.js" charset="utf-8"></script>
+    <script src="../lib/punchcard.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="punchcardDiv"></div>
+
+    <script type="text/javascript">
+            
+        var self = {}
+        self.punchViz = tdviz.viz.punchcard({
+            id_name : 'punchcardDiv',
+            width: 600,
+            height: 350,
+            headers:  ["Vertical Header","Horizontal"],
+            labels: [["Plata","Oro","Platino"],["Alto","Medio","Bajo","Muy bajo"]],
+            color_scale: d3.scale.linear().domain([0,100]).range(["#FFFFFF", "#388DC3"]).clamp(true),
+            size_scale: d3.scale.sqrt().domain([0,100]).range([2,30]).clamp(true),
+            data: [12, 34, 5, 65, 7, 90, 61, 45, 4, 3, 50, 22]
+            //optionals
+            //margin
+            //header_margin : when Horizontal header gets in the way
+        });
+
+        //you may re-render with diferent labels and/or data
+        //self.punchViz.labels = [[horizontal],[vertical]]
+        //self.punchViz.render([1]);
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+

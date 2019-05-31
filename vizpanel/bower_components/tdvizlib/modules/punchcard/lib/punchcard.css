@@ -1,0 +1,51 @@
+body
+{
+    background-color: #000;
+}
+
+.punch_tooltip
+{
+    position: absolute;
+    width: 180px;
+    padding: 10px;
+    font: 18px Titillium Web;
+    background: #FFF;
+    color: #3C3C3B;
+    border: solid 1px #aaa;
+    border-radius: 8px;
+    pointer-events: none;
+    z-order:1000;
+    text-align:center;
+    font-weight:400;
+  
+}
+
+text.label
+{
+
+}
+
+text.headerH
+{
+    font-size: 20px;
+    fill: white;
+}
+
+text.headerV
+{
+    font-size: 20px;
+    fill: white;
+}
+
+circle.punches
+{
+    /*stroke-width: 1px;*/
+    /*stroke: #FFF;*/
+}
+
+.rotate
+{
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}

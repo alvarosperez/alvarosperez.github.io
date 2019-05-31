@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+
+
+    <!-- Estilos -->
+    <link href="http://fonts.googleapis.com/css?family=Dosis" rel="stylesheet" type="text/css">
+
+    <link href="css/ionic.css" rel="stylesheet" type="text/css"/>
+    <link href="css/help.css" rel="stylesheet" type="text/css"/>
+    <link href="css/app.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bower_components/toastr/toastr.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="bower_components/leaflet-dist/leaflet.css" />
+
+
+    <!-- JS's -->
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/d3/d3.min.js"></script>
+    <script type="text/javascript" src="bower_components/leaflet-dist/leaflet.js" charset="utf-8"></script>
+    <script type="text/javascript" src="bower_components/leaflet-providers/leaflet-providers.js" charset="utf-8"></script>
+    <script type="text/javascript" src="bower_components/toastr/toastr.min.js"></script>
+    <script type="text/javascript" src="bower_components/tdvizlib/modules/maps/lib/map_viz.js"></script>
+
+    <!--Translate component-->
+
+    <script type="text/javascript" src="js/translate.js"></script>
+
+    <script type="text/javascript" src="js/3rdparty/jscolor.js"></script>
+
+    <script type="text/javascript" src="js/viz/chordGraph.js"></script>
+    <script type="text/javascript" src="js/viz/circlePacking.js"></script>
+    <script type="text/javascript" src="js/viz/treeMap.js"></script>
+    <script type="text/javascript" src="js/viz/heatMap.js"></script>
+    <script type="text/javascript" src="js/controller/vizController.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!--Map+geo data-->
+
+    <script type="text/javascript" src="js/map_data.js"></script>
+    <script type="text/javascript" src="js/geo/brazil.js"></script>
+    <script type="text/javascript" src="js/geo/spain.js"></script>
+    <script type="text/javascript" src="js/geo/uk.js"></script>
+    <script type="text/javascript" src="js/geo/argentina.js"></script>
+    <script type="text/javascript" src="js/geo/venezuela.js"></script>
+    <script type="text/javascript" src="js/geo/mexico.js"></script>
+    <script type="text/javascript" src="js/geo/ecuador.js"></script>
+    <script type="text/javascript" src="js/geo/peru.js"></script>
+
+    <!-- Help -->
+    <script type="text/javascript" src="js/help.js"></script>
+    <script type="text/javascript" src="data/help/help_circle_packing.js"></script>
+    <script type="text/javascript" src="data/help/help_choropleth.js"></script>
+    <script type="text/javascript" src="data/help/help_chordgraph.js"></script>
+    <script type="text/javascript" src="data/help/help_treemap.js"></script>
+
+</head>
+<body>
+
+<div id="left-nav">
+    <!--<div class="welcome">Welcome, Christophe</div>-->
+    <div class="title" id="type">Tipo de Visualización</div>
+    <ul class="list">
+        <li id="circle_packing" class="list-item active">
+            <a class="item-content" href="#circle_packing">
+                <img src="css/img/circlepacking.png" class="icon"/>
+                <h3>Circle Packing</h3>
+                <p id="circle_sub">Distribución en círculos</p>
+            </a>
+        </li>
+        <li id="treemap" class="list-item">
+            <a class="item-content" href="#treemap">
+                <img src="css/img/treemap.png" class="icon"/>
+                <h3>Treemap</h3>
+                <p id="treemap_sub">Distribución en rectángulos</p>
+            </a>
+        </li>
+        <li id="chordgraph" class="list-item">
+            <a class="item-content" href="#chordgraph">
+                <img src="css/img/chord.png" class="icon"/>
+                <h3>Chord Graph</h3>
+                <p id="chord_sub">Diagrama de cuerdas </p>
+            </a>
+        </li>
+        <li id="choropleth" class="list-item">
+            <a class="item-content" href="#choropleth">
+                <img src="css/img/choropleth.png" class="icon"/>
+                <h3>Choropleth</h3>
+                <p id="map_sub">Mapa cromático de regiones</p>
+            </a>
+        </li>
+        <!--<li id="matrix" class="list-item">-->
+            <!--<a class="item-content" href="#matrix">-->
+                <!--<img src="css/img/matrix.png" class="icon"/>-->
+                <!--<h3>Transition Matrix</h3>-->
+                <!--<p>Matriz de Transición</p>-->
+            <!--</a>-->
+        <!--</li>-->
+    </ul>
+    <div class="version"></div>
+</div>
+
+<div id="container" class="transition">
+    <header class="bar bar-header nav-bar bar-stable">
+        <button id="btn-menu" class="button button-icon" style="font-size: 22px;"><i class="fa fa-cogs"></i>   <span id="conf">Configuración</span></button>
+        <h1 class="title">VizPanel: <span class="viz_name">Circle packing</span><span style="font-size:12px;"></span></h1>
+    </header>
+
+    <div id="drop_zone">Suelta los archivos</div>
+    <div id="help"></div>
+    <div id="export"><i class="fa fa-download"></i></div>
+
+    <div id="vizParent" class="vizParent">
+        <script>
+
+            tr._lang = "es";
+
+            $("#drop_zone").html(tr._tr('drag')); $("#conf").html(tr._tr('conf')); $("#type").html(tr._tr('type'));
+
+            $("#circle_sub").html(tr._tr('circle_sub')); $("#treemap_sub").html(tr._tr('treemap_sub'));
+            $("#chord_sub").html(tr._tr('chord_sub')); $("#map_sub").html(tr._tr('map_sub'));
+
+            var myController = tdviz.controller.vizController(
+                {
+                    'idName': "vizParent",
+                    'className': "vizParent",
+                    'baseJUrl': "data/",
+                    'imgPath': "img/",
+                    'selectId': "type_select",
+                    'transTime': 1500,
+                    'colorScale': d3.scale.category20b(),
+                    'backColorScale': d3.scale.linear().domain([0,2]).range(["#EEE","#AAA"]),
+                    'topMargin': 80,
+                    'debugLevel': 1,
+                    'defaultMap': "spain",
+                    'dataOptions': {
+                        'separator': ";",
+                        'translateComma': true
+                    }
+                });
+        </script>
+    </div>
+
+    <div class="bottom_left"><img src="css/img/logo_analytics_black.png" width="150px"></div>
+    <div class="bottom_right"><img src="css/img/logo_telefonica_azul.png" width="150px"></div>
+    <!--<div class="controls" id="controls"></div>-->
+</div>
+</body>
+</html>
